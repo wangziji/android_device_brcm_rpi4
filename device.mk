@@ -234,7 +234,7 @@ PRODUCT_COPY_FILES += \
 
 # Seccomp
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
+    $(DEVICE_PATH)/seccomp_policy/android.hardware.media.c2-extended-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2-extended-seccomp_policy \
     $(DEVICE_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(DEVICE_PATH)/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
@@ -263,7 +263,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += external/v4l2_codec2
 
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0-service-v4l2 \
+    android.hardware.media.c2@1.2-service-v4l2 \
     libc2plugin_store
 
 PRODUCT_COPY_FILES += \

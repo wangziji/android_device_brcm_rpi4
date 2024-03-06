@@ -87,3 +87,6 @@ ro.vendor.v4l2_codec2.encode_concurrent_instances=8
 # Wifi
 wifi.interface=wlan0
 
+# Window extensions
+persist.settings.large_screen_opt.enabled=true
+

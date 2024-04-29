@@ -9,7 +9,9 @@ fstatat64: 1
 fstatfs64: 1
 getcwd: 1
 getdents64: 1
+getegid32: 1
 geteuid32: 1
+getgid32: 1
 getuid32: 1
 mmap2: 1
 open: 1

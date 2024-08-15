@@ -13,6 +13,7 @@ getegid32: 1
 geteuid32: 1
 getgid32: 1
 getuid32: 1
+mkdirat: 1
 mmap2: 1
 open: 1
 pselect6: 1

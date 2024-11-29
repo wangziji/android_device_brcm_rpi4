@@ -11,6 +11,9 @@ PRODUCT_AAPT_PREF_CONFIG := tvdpi
 PRODUCT_CHARACTERISTICS := tv
 $(call inherit-product, device/google/atv/products/atv_base.mk)
 
+PRODUCT_HOST_PACKAGES += adbd \
+                        adb
+
 # Android TV
 PRODUCT_PACKAGES += \
     DocumentsUI \

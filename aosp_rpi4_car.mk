@@ -15,6 +15,9 @@ PRODUCT_CHARACTERISTICS := automotive,nosdcard
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)
 
+PRODUCT_HOST_PACKAGES += adbd \
+                        adb
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.automotive.audiocontrol-service.example

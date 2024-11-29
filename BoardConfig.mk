@@ -6,6 +6,11 @@
 
 DEVICE_PATH := device/brcm/rpi4
 
+# https://stackoverflow.com/questions/71001696/how-to-include-opengapps-in-aosp-12-build
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+# adbd
+BOARD_VENDOR_KERNEL_CMDLINE += ro.secure=0 ro.debuggable=1 persist.service.adb.enable=1 service.adb.tcp.port=5555
+
 # Platform
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RECOVERY := true

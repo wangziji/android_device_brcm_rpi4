@@ -12,6 +12,9 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
+PRODUCT_HOST_PACKAGES += adbd \
+                        adb
+
 # Overlays
 PRODUCT_PACKAGES += \
     AndroidRpiOverlay \
